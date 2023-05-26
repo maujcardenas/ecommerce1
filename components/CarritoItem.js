@@ -1,4 +1,4 @@
-export default function CartItem({ item, onRemoveItem, onUpdateQuantity }) {
+export default function CarritoItem({ item, onRemoveItem, onUpdateQuantity }) {
   const handleQuantityChange = (event) => {
     const newQuantity = parseInt(event.target.value);
     onUpdateQuantity(item.productId, newQuantity);

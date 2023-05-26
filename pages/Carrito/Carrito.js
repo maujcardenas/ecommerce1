@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useContext } from "react";
 import MainLayout from "@/layouts/MainLayout";
 import { CartContext } from "@/context/CartContext";
-import CartItem from "@/components/CartItem";
+import CarritoItem from "@/components/CarritoItem";
 
 const Cart = () => {
   const { cartItems, removeItem, updateQuantity } = useContext(CartContext);
@@ -35,7 +35,7 @@ const Cart = () => {
       ) : (
         <div>
           {cartItems.map((item) => (
-            <CartItem
+            <CarritoItem
               key={item.productId}
               item={item}
               onRemoveItem={handleRemoveItem}
