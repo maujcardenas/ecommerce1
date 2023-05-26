@@ -1,8 +1,8 @@
-import MainLayout from "@/layouts/MainLayout";
-import CartItem from "@/components/CartItem";
 import Link from "next/link";
 import React, { useContext } from "react";
+import MainLayout from "@/layouts/MainLayout";
 import { CartContext } from "@/context/CartContext";
+import CartItem from "@/components/CartItem";
 
 const Cart = () => {
   const { cartItems, removeItem, updateQuantity } = useContext(CartContext);
