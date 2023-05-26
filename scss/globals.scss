@@ -1,6 +1,4 @@
-@import "@/scss/colors.scss";
-
-// This page contains all styles
+@import "@/scss/index.scss";
 
 // 1. Global Styles
 
@@ -12,8 +10,9 @@ body {
 h1 {
   text-align: center;
   font-size: 60px;
-  margin-top: 35px;
-  margin-bottom: 75px;
+  padding-top: 35px;
+  padding-bottom: 40x;
+  margin-top: 20px;
 }
 
 // UI Elements
@@ -23,7 +22,7 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: beige;
+  justify-content: center;
   margin: 10px auto;
   width: 320px;
 }
@@ -43,126 +42,18 @@ h1 {
   }
 }
 
-// Components
-
-.product-card {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 10px auto;
-  width: 320px;
-  border: 2px solid blue;
-  justify-content: center;
-}
-
-.product-price {
-  padding-bottom: 20px;
-}
-
-.cart-item {
-  border: 2px solid red;
-}
-
-// Home
-
-.portada {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 320px;
-  margin: 60px auto;
-  border: 2px solid green;
-  background-color: red;
-}
-
-// Navigation
-
-nav {
-  background-color: $background-green;
-}
-
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  // padding: 10px;
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-left a,
-.navbar-right a {
-  padding: 10px;
-  text-decoration: none;
-  color: $font-light;
-  &:hover {
-    background-color: $background-yellow;
-  }
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-mobile-icon {
-  display: none;
+.sbutton {
+  font-size: 12px;
+  padding: 10px 10px;
+  background-color: #b6e400;
+  color: #fff;
+  // border: none;
+  border-radius: 20px;
   cursor: pointer;
-}
+  width: 120px;
 
-.navbar-mobile-menu {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .navbar-left {
-    display: none;
+  &:hover {
+    background-color: #ffe600;
+    color: #fff;
   }
-
-  .navbar-right {
-    display: none;
-  }
-
-  .navbar-mobile-icon {
-    display: block;
-    color: $font-light;
-    padding: 10px;
-  }
-
-  .navbar-mobile-menu {
-    display: block;
-  }
-
-  .navbar-mobile-menu a {
-    color: $font-light;
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-    &:hover {
-      background-color: $background-yellow;
-    }
-  }
-}
-
-.item-count {
-  position: relative;
-  top: -6px;
-  left: -4px;
-  background-color: $background-yellow;
-
-  color: $font-light;
-  font-size: 14px;
-  // font-weight: 800;
-  padding: 2px;
-  border-radius: 40%;
-}
-
-.item {
-  display: inline;
-  margin-left: 2px;
 }

@@ -5,7 +5,7 @@ const CartItem = ({ item, onRemoveItem, onUpdateQuantity }) => {
   };
 
   return (
-    <div className="cart-item basic-card">
+    <div className="basic-card cart-item">
       <h3>{item.name}</h3>
       <p>Precio: ${item.price}</p>
       <p>
@@ -17,8 +17,8 @@ const CartItem = ({ item, onRemoveItem, onUpdateQuantity }) => {
           onChange={handleQuantityChange}
         />
       </p>
-      <button className="button" onClick={() => onRemoveItem(item.productId)}>
-        Remove
+      <button className="sbutton" onClick={() => onRemoveItem(item.productId)}>
+        Eliminar
       </button>
     </div>
   );

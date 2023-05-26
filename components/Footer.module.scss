@@ -1,0 +1,16 @@
+.footer {
+  background-color: $background-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+  background-color: $background-green;
+}
+
+.menu-footer {
+  a {
+    color: white;
+  }
+}

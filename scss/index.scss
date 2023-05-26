@@ -1,1 +1,17 @@
-@import "./colors.scss";
+@import "../scss/colors.scss";
+
+//Pages
+
+@import "../pages/Carrito/Carrito.module.scss";
+@import "../pages/Contacto/Contacto.module.scss";
+@import "../pages/FinalizarCompra/FinalizarCompra.scss";
+@import "../pages/MiCuenta/MiCuenta.module.scss";
+@import "../pages/Nosotros/Nosotros.module.scss";
+@import "../pages/Tienda/Tienda.module.scss";
+
+//Components
+
+@import "../components/Footer.module.scss";
+@import "../components/CartItem.module.scss";
+@import "../components/Header.module.scss";
+@import "../components/productCard.module.scss";
