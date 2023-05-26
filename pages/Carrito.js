@@ -1,9 +1,10 @@
-import CartItem from "@/components/cartItem";
 import MainLayout from "@/layouts/MainLayout";
+import CartItem from "@/components/CartItem";
 
 import React, { useContext } from "react";
 import { CartContext } from "@/context/CartContext";
 import ProductsList from "@/components/productList";
+import Link from "next/link";
 
 const Cart = () => {
   const { cartItems, removeItem, updateQuantity } = useContext(CartContext);
@@ -37,10 +38,20 @@ const Cart = () => {
     updateQuantity(productId, quantity);
   };
 
+  const calculateTotal = (cartItems) => {
+    let total = 0;
+
+    for (const item of cartItems) {
+      total += item.price * item.quantity;
+    }
+
+    return total.toFixed(2);
+  };
+
   return (
     <MainLayout>
-      <ProductsList />
-      <h2>Shopping Cart</h2>
+      <h1>Carrito</h1>
+
       {cartItems.length === 0 ? (
         <p>El carrito está vacío</p>
       ) : (
@@ -53,8 +64,13 @@ const Cart = () => {
               onUpdateQuantity={handleUpdateQuantity}
             />
           ))}
-          <p>Total:</p>
-          <p>$56.78</p>
+          <div className="total-compra basic-card">
+            <p>Total: </p>
+            <p>${calculateTotal(cartItems)}</p>
+            <Link href="/FinalizarCompra">
+              <button className="button">Finalizar Compra</button>
+            </Link>
+          </div>
         </div>
       )}
     </MainLayout>

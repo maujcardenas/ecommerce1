@@ -1,6 +1,8 @@
 import ProductsList from "@/components/productList";
 import MainLayout from "@/layouts/MainLayout";
 import Head from "next/head";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -11,7 +13,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        <h1>Bienvenido a Tropical Mitch</h1>
+        <div className="portada">
+          <h3>Jugos Naturales</h3>
+          <h1>Tropical Mitch</h1>
+          <Link href="/Tienda">
+            <button className="button">Comprar</button>
+          </Link>
+        </div>
+
         <ProductsList />
       </MainLayout>
     </>

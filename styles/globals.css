@@ -1,9 +1,136 @@
-.product-card {
-  padding: 20px;
-  border: 1px solid;
+/* Global Styles */
+body {
+  font-family: "Nunito", serif;
+  font-size: 18px;
 }
 
-.cart-item {
-  padding: 2px;
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 35px;
+  margin-bottom: 75px;
+}
+
+/* UI  */
+
+.basic-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: beige;
+  margin: 10px auto;
+  width: 320px;
+}
+
+.button {
+  font-size: 20px;
+  padding: 10px 40px;
+  background-color: #b6e400;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffe600;
+    color: #fff;
+  }
+}
+
+/* Components */
+
+.product-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px auto;
+  width: 320px;
+  border: 2px solid blue;
+  justify-content: center;
+}
+
+.product-price {
+  padding-bottom: 20px;
+}
+
+/* .cart-item {
   border: 2px solid red;
+} */
+
+/* index - Home */
+.portada {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 320px;
+  margin: 60px auto;
+  border: 2px solid green;
+  background-color: red;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #f2f2f2;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left a,
+.navbar-right a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-mobile-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-left {
+    display: none;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-mobile-icon {
+    display: block;
+  }
+
+  .navbar-mobile-menu {
+    display: block;
+    margin-top: 10;
+  }
+
+  .navbar-mobile-menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
 }

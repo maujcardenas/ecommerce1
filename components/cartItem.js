@@ -5,11 +5,11 @@ const CartItem = ({ item, onRemoveItem, onUpdateQuantity }) => {
   };
 
   return (
-    <div className="cart-item">
+    <div className="cart-item basic-card">
       <h3>{item.name}</h3>
-      <p>Price: ${item.price}</p>
+      <p>Precio: ${item.price}</p>
       <p>
-        Quantity:
+        Cantidad:
         <input
           type="number"
           min="1"
@@ -17,7 +17,9 @@ const CartItem = ({ item, onRemoveItem, onUpdateQuantity }) => {
           onChange={handleQuantityChange}
         />
       </p>
-      <button onClick={() => onRemoveItem(item.productId)}>Remove</button>
+      <button className="button" onClick={() => onRemoveItem(item.productId)}>
+        Remove
+      </button>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import ProductsList from "@/components/productList";
 export default function Tienda() {
   return (
     <MainLayout>
-      <h1> Esta es la tienda sola</h1>
+      <h1> Tienda </h1>
       <ProductsList />
     </MainLayout>
   );
