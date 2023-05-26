@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
       <MainLayout>
         <div className="portada">
-          <h3>Jugos Naturales</h3>
           <h1>Tropical Mitch</h1>
+          <h3>Jugos Naturales</h3>
           <Link href="/Tienda">
             <button className="button">Comprar</button>
           </Link>

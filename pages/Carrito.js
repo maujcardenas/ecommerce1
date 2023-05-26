@@ -1,34 +1,12 @@
 import MainLayout from "@/layouts/MainLayout";
 import CartItem from "@/components/CartItem";
-
+import Link from "next/link";
 import React, { useContext } from "react";
 import { CartContext } from "@/context/CartContext";
-import ProductsList from "@/components/productList";
-import Link from "next/link";
 
 const Cart = () => {
   const { cartItems, removeItem, updateQuantity } = useContext(CartContext);
   console.log(cartItems);
-  //   const cartItems = [
-  //     {
-  //       productId: 1,
-  //       name: "Product 1",
-  //       price: 10.99,
-  //       quantity: 2,
-  //     },
-  //     {
-  //       productId: 2,
-  //       name: "Product 2",
-  //       price: 15.99,
-  //       quantity: 1,
-  //     },
-  //     {
-  //       productId: 3,
-  //       name: "Product 3",
-  //       price: 7.99,
-  //       quantity: 4,
-  //     },
-  //   ];
 
   const handleRemoveItem = (productId) => {
     removeItem(productId);

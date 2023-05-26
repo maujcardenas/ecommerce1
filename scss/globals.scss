@@ -1,7 +1,12 @@
-/* Global Styles */
+@import "@/scss/colors.scss";
+
+// This page contains all styles
+
+// 1. Global Styles
+
 body {
   font-family: "Nunito", serif;
-  font-size: 18px;
+  margin: 0px;
 }
 
 h1 {
@@ -11,7 +16,7 @@ h1 {
   margin-bottom: 75px;
 }
 
-/* UI  */
+// UI Elements
 
 .basic-card {
   padding: 20px;
@@ -38,7 +43,7 @@ h1 {
   }
 }
 
-/* Components */
+// Components
 
 .product-card {
   padding: 20px;
@@ -55,11 +60,12 @@ h1 {
   padding-bottom: 20px;
 }
 
-/* .cart-item {
+.cart-item {
   border: 2px solid red;
-} */
+}
 
-/* index - Home */
+// Home
+
 .portada {
   padding: 20px;
   display: flex;
@@ -71,16 +77,17 @@ h1 {
   background-color: red;
 }
 
-/* Navigation Styles */
+// Navigation
+
 nav {
-  background-color: #f2f2f2;
+  background-color: $background-green;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  // padding: 10px;
 }
 
 .navbar-left {
@@ -90,9 +97,12 @@ nav {
 
 .navbar-left a,
 .navbar-right a {
-  margin-right: 20px;
+  padding: 10px;
   text-decoration: none;
-  color: #333;
+  color: $font-light;
+  &:hover {
+    background-color: $background-yellow;
+  }
 }
 
 .navbar-right {
@@ -120,17 +130,39 @@ nav {
 
   .navbar-mobile-icon {
     display: block;
+    color: $font-light;
+    padding: 10px;
   }
 
   .navbar-mobile-menu {
     display: block;
-    margin-top: 10;
   }
 
   .navbar-mobile-menu a {
+    color: $font-light;
+    padding: 10px 15px;
     display: block;
-    margin-bottom: 10px;
     text-decoration: none;
-    color: #333;
+    &:hover {
+      background-color: $background-yellow;
+    }
   }
+}
+
+.item-count {
+  position: relative;
+  top: -6px;
+  left: -4px;
+  background-color: $background-yellow;
+
+  color: $font-light;
+  font-size: 14px;
+  // font-weight: 800;
+  padding: 2px;
+  border-radius: 40%;
+}
+
+.item {
+  display: inline;
+  margin-left: 2px;
 }
