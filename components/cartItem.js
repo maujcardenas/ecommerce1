@@ -1,4 +1,4 @@
-const CartItem = ({ item, onRemoveItem, onUpdateQuantity }) => {
+export default function CartItem({ item, onRemoveItem, onUpdateQuantity }) {
   const handleQuantityChange = (event) => {
     const newQuantity = parseInt(event.target.value);
     onUpdateQuantity(item.productId, newQuantity);
@@ -22,6 +22,4 @@ const CartItem = ({ item, onRemoveItem, onUpdateQuantity }) => {
       </button>
     </div>
   );
-};
-
-export default CartItem;
+}
