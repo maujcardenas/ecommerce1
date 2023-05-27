@@ -1,4 +1,17 @@
 .portada {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 950px) {
+  .portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.portada-title {
   padding: 20px;
   display: flex;
   flex-direction: column;

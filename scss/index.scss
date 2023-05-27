@@ -2,6 +2,7 @@
 
 //Pages
 
+@import "../pages/Home.module.scss";
 @import "../pages/Carrito/Carrito.module.scss";
 @import "../pages/Contacto/Contacto.module.scss";
 @import "../pages/FinalizarCompra/FinalizarCompra.scss";
@@ -15,3 +16,4 @@
 @import "../components/CartItem.module.scss";
 @import "../components/Header.module.scss";
 @import "../components/productCard.module.scss";
+@import "../components/productList.module.scss";
