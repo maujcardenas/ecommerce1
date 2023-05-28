@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useMemo } from "react";
 import MainLayout from "@/layouts/MainLayout";
 import { CartContext } from "@/context/CartContext";
 import CarritoItem from "@/components/CarritoItem";
@@ -26,6 +26,10 @@ const Cart = () => {
     return total.toFixed(2);
   };
 
+  const total = useMemo(() => {
+    return calculateTotal(cartItems);
+  }, [cartItems]);
+
   return (
     <MainLayout>
       <h1>Carrito</h1>
@@ -44,7 +48,7 @@ const Cart = () => {
           ))}
           <div className="total-compra">
             <p>Total: </p>
-            <p>${calculateTotal(cartItems)}</p>
+            <p>${total}</p>
             <Link href="/FinalizarCompra">
               <button className="button">Finalizar Compra</button>
             </Link>

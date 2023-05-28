@@ -5,7 +5,7 @@ export default function Tienda() {
   return (
     <MainLayout>
       <div className="tienda">
-        <h1> Tienda </h1>
+        <h1> Tienda Tropical Mitch </h1>
         <ProductsList />
       </div>
     </MainLayout>

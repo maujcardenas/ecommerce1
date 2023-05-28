@@ -9,10 +9,13 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="product-card">
-      <img src={product.image} alt={product.name} />
+      <img
+        src={`https://tfs-strapi-new-production.up.railway.app${product.image}`}
+        alt={product.name}
+      />
       <h3>{product.name}</h3>
       <p>{product.description}</p>
-      <div className="product-price"> {product.price}</div>
+      <div className="product-price"> {product.price.toFixed(2)}</div>
       <button className="button" onClick={handleAddToCart}>
         Agregar al carrito
       </button>
