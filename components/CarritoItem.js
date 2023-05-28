@@ -5,7 +5,7 @@ export default function CarritoItem({ item, onRemoveItem, onUpdateQuantity }) {
   };
 
   return (
-    <div className="basic-card cart-item">
+    <div className="cart-item">
       <h3>{item.name}</h3>
       <p>Precio: ${item.price}</p>
       <p>

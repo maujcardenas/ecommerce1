@@ -1,10 +1,8 @@
 @media (max-width: 768px) {
   .products-list {
-    background-image: url("/backProducto2.webp");
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    background-color: red;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -12,11 +10,9 @@
 
 @media (min-width: 768px) {
   .products-list {
-    background-image: url("/backProducto2.webp");
     display: flex;
     flex-direction: row;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: yellow;
   }
 }

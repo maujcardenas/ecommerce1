@@ -51,6 +51,10 @@
   color: $font-light;
   justify-content: center;
   align-items: center;
+  .copyright {
+    text-align: center;
+    padding: 10px;
+  }
 }
 
 .menu-footer {

@@ -59,7 +59,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>Desarrollado por: Equipo II Máster Web Development Fullstack</p>
+        <span className="copyright">
+          Desarrollado por: Equipo II Máster Web Development Fullstack
+        </span>
       </div>
     </div>
   );

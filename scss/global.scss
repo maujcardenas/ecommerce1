@@ -4,31 +4,49 @@ body {
   font-family: "Nunito", serif;
   margin: 0px;
 }
+.__next {
+  width: 100%;
+}
+// .layout {
+// width: 100%;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// }
 
 h1 {
   text-align: center;
   font-size: 60px;
-  padding-top: 35px;
-  padding-bottom: 40x;
+  padding: 10px 0;
+  // padding-bottom: 40x;
   margin: 0px;
 }
 
 h3 {
   color: $background-yellow;
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-size: 45px;
+  margin-top: 0;
 }
 
 // UI Elements
 
-.basic-card {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  margin: 10px auto;
-  width: 320px;
-}
+// .basic-card {
+//   padding: 20px;
+//   background-color: white;
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   justify-content: center;
+//   margin: 0px auto;
+//   width: 320px;
+// }
 
 .button {
   font-size: 20px;

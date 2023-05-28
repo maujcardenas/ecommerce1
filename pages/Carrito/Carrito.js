@@ -42,7 +42,7 @@ const Cart = () => {
               onUpdateQuantity={handleUpdateQuantity}
             />
           ))}
-          <div className="total-compra basic-card">
+          <div className="total-compra">
             <p>Total: </p>
             <p>${calculateTotal(cartItems)}</p>
             <Link href="/FinalizarCompra">

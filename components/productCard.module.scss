@@ -4,11 +4,25 @@
   flex-direction: column;
   text-align: center;
   margin: 10px auto;
-  width: 320px;
-  border: 2px solid blue;
+  max-width: 240px;
+  // border: 2px solid blue;
   justify-content: center;
+  background-color: white;
+  box-shadow: 2px 2px 20px -2px #e5e5e5;
 }
 
 .product-price {
   padding-bottom: 20px;
+
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: $background-dark;
+}
+
+.product-price::before {
+  content: "$";
+  font-size: 1rem;
+  vertical-align: super;
+  margin-right: 1px;
 }

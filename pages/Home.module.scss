@@ -1,23 +1,79 @@
-.portada {
+.portada-section {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 @media (max-width: 950px) {
-  .portada {
+  .portada-section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
-.portada-title {
+@media (min-width: 563px) {
+  .image-b {
+    max-width: 563px;
+    height: auto;
+  }
+}
+
+@media (max-width: 563px) {
+  .image-b {
+    max-width: 240px;
+    height: auto;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .image-container {
+//     width: 300px;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .image-container {
+//     width: 563px;
+//   }
+// }
+
+.intro-card {
   padding: 20px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 320px;
-  margin: 60px auto;
-  border: 2px solid green;
-  background-color: red;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 320px;
+  // align-self: center;
+  // border: 3px solid $background-yellow;
+  // box-shadow: 2px 2px 20px -2px #e5e5e5;
+}
+
+.tienda-section {
+  // background-color: red;
+  background-image: url("/backProducto2.webp");
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+}
+
+.bienvenidos {
+  font-weight: bold;
+}
+
+.bienvenidos-card {
+  // margin: 40px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0px auto;
+  max-width: 320px;
+  // border: 3px solid $background-yellow;
+  box-shadow: 2px 2px 20px -2px #e5e5e5;
 }

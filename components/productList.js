@@ -4,14 +4,14 @@ const ProductsList = () => {
   const products = [
     {
       productId: 1,
-      name: "Jugo Natural",
+      name: "Jugo Natural Mango",
       description: "700 ML",
       price: 9.99,
       image: "product1.jpg",
     },
     {
       productId: 2,
-      name: "Jugo Natural 2",
+      name: "Jugo Natural Naranja",
       description: "1000 ML",
       price: 19.99,
       image: "product2.jpg",
