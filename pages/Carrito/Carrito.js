@@ -7,7 +7,6 @@ import axios from "axios";
 
 const Cart = () => {
   const { cartItems, removeItem, updateQuantity } = useContext(CartContext);
-  console.log(cartItems);
 
   const handleRemoveItem = (productId) => {
     removeItem(productId);
@@ -46,8 +45,6 @@ const Cart = () => {
           },
         }
       );
-
-      console.log(response.data.data.id);
       return response.data.data.id;
     } catch (error) {
       console.error(error);
@@ -66,8 +63,6 @@ const Cart = () => {
     const today = new Date();
     const fiveDaysLater = new Date();
     fiveDaysLater.setDate(fiveDaysLater.getDate() + 5);
-
-    // const fiveDaysLater = new Date(today + 5);
 
     try {
       const response = await axios.post(
@@ -89,6 +84,8 @@ const Cart = () => {
       console.error(error, "horrorrr");
     }
   };
+
+  console.log(cartItems, "escribiendo aqui los items");
 
   return (
     <MainLayout>

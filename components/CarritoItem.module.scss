@@ -1,3 +1,19 @@
+@media (min-width: 630px) {
+}
+
+@media (max-width: 630px) {
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    text-align: center;
+    margin: 10px auto;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 20px -2px #e5e5e5;
+  }
+}
+
 .cart-item {
   display: flex;
   flex-direction: row;

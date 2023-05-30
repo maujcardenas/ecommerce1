@@ -1,0 +1,23 @@
+.resumen-compra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.order-item {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0px auto;
+  max-width: 320px;
+  box-shadow: 2px 2px 20px -2px #e5e5e5;
+}
+
+.r-item-name {
+  font-weight: bold;
+}
