@@ -28,9 +28,9 @@ const Navbar = () => {
           <Link href="/Carrito">
             <FaShoppingCart />
             <div className="item"> Carrito </div>
-            {totalItemCount > 0 && (
+            {/* {totalItemCount > 0 && (
               <span className="item-count">{totalItemCount} </span>
-            )}
+            )} */}
           </Link>
         </div>
         <div className="navbar-mobile-icon" onClick={toggleMenu}>
@@ -51,9 +51,9 @@ const Navbar = () => {
           <Link href="/Carrito">
             <FaShoppingCart />
             <div className="item"> Carrito </div>
-            {totalItemCount > 0 && (
+            {/* {totalItemCount > 0 && (
               <span className="item-count">{totalItemCount} </span>
-            )}
+            )} */}
           </Link>
         </div>
       )}
